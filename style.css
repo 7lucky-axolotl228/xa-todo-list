@@ -71,6 +71,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+.site-header__logo {
+  cursor: pointer;
+}
 
 
 /* MAIN */
@@ -114,12 +117,14 @@ a {
   border: 0;
   color: rgba(247, 247, 247, 1);
   background-color: rgba(108, 99, 255, 1);
+  cursor: pointer;
+}
+.form__btn:hover {
+  opacity: 0.7;
 }
 .notes {
   margin-top: 0;
   margin-bottom: 2rem;
-}
-.notes__container {
 }
 .notes-form {
   display: flex;

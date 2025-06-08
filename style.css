@@ -93,7 +93,7 @@ a {
   padding: 0.5rem 1rem;
   margin-right: 1.56rem;
   border-radius: 0.3125rem;
-  border: 0.0725rem solid rgba(108, 99, 255, 1);
+  border: 0.0625rem solid rgba(108, 99, 255, 1);
   color: rgba(195, 193, 229, 1);
   font-weight: 500;
   font-size: 1rem;
@@ -116,10 +116,41 @@ a {
   background-color: rgba(108, 99, 255, 1);
 }
 .notes {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 .notes__container {
 }
 .notes-form {
+  display: flex;
+  flex-direction: column;
+}
+.notes-form div, input, label {
+  cursor: pointer;
 }
 .notes-form__note-wrapper {
+  display: flex;
+  align-items: center;
+  width: 520px;
+  padding: 0.5rem 0;
+}
+.notes-form__note-wrapper:not(:last-child) {
+  border-bottom: 0.0625rem solid rgba(108, 99, 255, 1);
+}
+.notes__input {
+  width: 26px;
+  height: 26px;
+  margin-right: 1.2rem;
+  border: 0.0625rem solid rgba(108, 99, 255, 1);
+}
+.notes__label {
+  font-family: 'Kanit';
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.notes__input:checked + .notes__label,
+.notes__input {
+  text-decoration: line-through;
+  opacity: 0.5;
 }

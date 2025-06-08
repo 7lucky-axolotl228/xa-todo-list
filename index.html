@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo - List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__container container">
+      <div class="site-header__logo">
+        <img src="img/TODO-LIST.svg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="form">
+      <div class="form__container container">
+        <form class="search-form" method="get">
+          <input class="search-form__input" type="text" name="search" placeholder="Search note...">
+          <button class="search-form__btn" type="menu">ALL <img src="img/search-logo.svg" alt=""></button>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="notes">
+      <div class="notes__container container">
+        <form class="notes-form" method="get">
+
+          <div class="notes-form__note-wrapper">
+            <label for="n-1">Note#1</label>
+            <input type="checkbox" name="note" id="n-1">
+          </div>
+
+          <div class="notes-form__note-wrapper">
+            <label for="n-2">Note#2</label>
+            <input type="checkbox" name="note" id="n-2">
+          </div>
+
+          <div class="notes-form__note-wrapper">
+            <label for="n-3">Note#3</label>
+            <input type="checkbox" name="note" id="n-3">
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

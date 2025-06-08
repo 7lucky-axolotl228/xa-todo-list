@@ -125,10 +125,11 @@ a {
   display: flex;
   flex-direction: column;
 }
-.notes-form div, input, label {
+.notes-form input, label {
   cursor: pointer;
 }
 .notes-form__note-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   width: 520px;
@@ -153,4 +154,21 @@ a {
 .notes__input {
   text-decoration: line-through;
   opacity: 0.5;
+}
+.notes-form__icons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.notes-form__icons img {
+  display: none;
+  cursor: pointer;
+}
+.notes-form div:hover .notes-form__icons img {
+  display: flex;
+}
+.notes-form__icons img:nth-of-type(1) {
+  margin-right: 0.3125rem;
 }

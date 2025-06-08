@@ -62,21 +62,21 @@ a {
 
 /* HEADER */
 .site-header {
-  margin: 0;
-  padding: 2rem 0;
-}
-.site-header__container {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 2rem 0 0 0;
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.site-header__logo {
-}
+
 
 /* MAIN */
 .form-section {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 .form-section__container {
   display: flex;
